@@ -13,7 +13,7 @@ object MMKVHelper {
 
     private lateinit var mmkv: MMKV
 
-    fun init(context: Context,databaseId: String, isMultiProcess: Boolean) {
+    fun init(context: Context, databaseId: String, isMultiProcess: Boolean) {
         val rootDir = MMKV.initialize(context)
         infoLog("MMKV rootDir: $rootDir")
         mmkv =
